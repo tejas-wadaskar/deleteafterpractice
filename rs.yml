@@ -11,7 +11,7 @@ spec:
    metadata:
      name: mypod
      lables: 
-      app: podnp 
+       app: podnp
 
   spec:  
     containers: 
