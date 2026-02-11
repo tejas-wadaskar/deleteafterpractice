@@ -1,5 +1,5 @@
 module "ec2" {
-  source = "/home/ubuntu/practice/deleteafterpractice/terraform/module/main/EC2"
+  source = "./module/main/EC2"
   webserver_ami =  var.webserver_ami 
   webserver_instance_type = "t3.micro"
   webserver_keyname = "linux2"
@@ -11,7 +11,7 @@ module "ec2" {
 } 
 
 module "vpc" {
-  source =  "/home/ubuntu/practice/deleteafterpractice/terraform/module/main/VPC"
+  source =  "./module/main/VPC"
   vpc_cidr = "172.30.0.0/16"
   vpc_subnetA = "172.30.128.0/20"
   public_ip = true
