@@ -1,3 +1,8 @@
+provider "aws" {
+  region     = "us-east-1"
+  profile = "configs" #masking
+}
+
 resource "aws_instance" "webserver" {
     for_each = toset(var.aws_ami) 
     ami = each.value
