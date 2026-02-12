@@ -1,6 +1,6 @@
 module "ec2" {
   source = "/home/ubuntu/deleteafterpractice/terraform/module/main/Ec2"
-  webserver_ami =  var.webserver_ami 
+  webserver_ami =  "ami-0b6c6ebed2801a5cb"
   webserver_instance_type = "t3.micro"
   webserver_keyname = "linux2"
   webserver_disable_api_termination = false
