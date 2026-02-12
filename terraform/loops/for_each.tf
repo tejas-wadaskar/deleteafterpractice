@@ -16,8 +16,8 @@ variable "aws_ami" {
 }
 
 output "aws_public_ip" {
-    value = [for instance in var.aws_ami:
-            aws_instance.wevserver[ami].public_ip ]
+    value = [for ami in var.aws_ami:
+            aws_instance.webserver[ami].public_ip ]
 }
 
 # for each loop will be used where instance have diff configs
