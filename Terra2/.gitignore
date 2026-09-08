@@ -1,0 +1,13 @@
+# Private SSH keys
+*.pem
+
+# Terraform working directory
+.terraform/
+
+# Terraform state
+terraform.tfstate
+terraform.tfstate.*
+
+# Variable files containing possible secrets
+*.tfvars
+*.tfvars.json
